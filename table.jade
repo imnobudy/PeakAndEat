@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  table(border=1)
+    tr 
+      td Restaurant name
+      td Restaurant Description
+    each restaurant in restaurants
+      tr
+        td #{restaurant.Name}
+        td #{restaurant.Address}
